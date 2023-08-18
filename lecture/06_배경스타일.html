@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경스타일</title>
+    <style>
+        body {
+            background: aqua;
+        }
+
+        #div-bg {
+            background: white;
+        }
+
+        .div-test {
+            background: white;
+            padding : 20px;
+            border : 5px dashed black;
+            width : 20%;
+            float : left;
+        }
+
+        #div1 {
+            background-clip: border-box;
+        }
+        #div2 {
+            background-clip: padding-box;
+        }
+        #div3 {
+            background-clip: content-box;
+        }
+
+        .clearfloat {
+            clear : left;
+        }
+
+        #bg-img {
+            width : 70%;
+            height: 1600px;
+            border : 4px solid red;
+            background-image: url("../resources/images/flower1.PNG");
+
+            background-repeat: no-repeat;
+
+            background-size: cover;
+            background-size: contain;
+            background-size: auto;
+
+            background-attachment: fixed; /* 유용하게 쓸 듯? */
+            background-attachment: scroll;
+
+            background-position: 50% 50%;
+            background-position: 30px 50px;
+            background-position: bottom;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>배경색과 배경 이미지</h1>
+
+    <h3>div 배경 테스트</h3>
+    <div id="div-bg">
+        인간의 소담스러운 군영과 두손을 것이다. 부패를 곧 모래뿐일 있는 청춘의 착목한는 설레는 청춘이 것이다. 같으며, 황금시대를 되려니와, 이상 얼마나 것이다. 않는 우리 밝은 따뜻한 얼마나 스며들어 있는 부패뿐이다. 있으며, 하여도 든 피어나는 있다. 따뜻한 얼음이 싶이 것이다. 꽃 가는 얼마나 이는 그들의 눈이 두기 것이다. 곧 온갖 같지 곳이 소담스러운 있으며, 칼이다. 얼마나 낙원을 이상 같이, 것이다. 방황하였으며, 지혜는 맺어, 바로 끝까지 있는가? 이상 싶이 목숨이 열락의 일월과 사막이다.
+    </div>
+
+    <h3>배경 적용 범위 조정</h3>
+    <div class="div-test" id="div1">인간의 소담스러운 군영과 두손을 것이다. 부패를 곧 모래뿐일 있는 청춘의 착목한는 설레는 청춘이 것이다. 같으며, 황금시대를 되려니와, 이상 얼마나 것이다. 않는 우리 밝은 따뜻한 얼마나 스며들어 있는 부패뿐이다. 있으며, 하여도 든 피어나는 있다. 따뜻한 얼음이 싶이 것이다. 꽃 가는 얼마나 이는 그들의 눈이 두기 것이다. 곧 온갖 같지 곳이 소담스러운 있으며, 칼이다. 얼마나 낙원을 이상 같이, 것이다. 방황하였으며, 지혜는 맺어, 바로 끝까지 있는가? 이상 싶이 목숨이 열락의 일월과 사막이다.
+    </div>
+    <div class="div-test" id="div2">인간의 소담스러운 군영과 두손을 것이다. 부패를 곧 모래뿐일 있는 청춘의 착목한는 설레는 청춘이 것이다. 같으며, 황금시대를 되려니와, 이상 얼마나 것이다. 않는 우리 밝은 따뜻한 얼마나 스며들어 있는 부패뿐이다. 있으며, 하여도 든 피어나는 있다. 따뜻한 얼음이 싶이 것이다. 꽃 가는 얼마나 이는 그들의 눈이 두기 것이다. 곧 온갖 같지 곳이 소담스러운 있으며, 칼이다. 얼마나 낙원을 이상 같이, 것이다. 방황하였으며, 지혜는 맺어, 바로 끝까지 있는가? 이상 싶이 목숨이 열락의 일월과 사막이다.
+    </div>
+    <div class="div-test" id="div3">인간의 소담스러운 군영과 두손을 것이다. 부패를 곧 모래뿐일 있는 청춘의 착목한는 설레는 청춘이 것이다. 같으며, 황금시대를 되려니와, 이상 얼마나 것이다. 않는 우리 밝은 따뜻한 얼마나 스며들어 있는 부패뿐이다. 있으며, 하여도 든 피어나는 있다. 따뜻한 얼음이 싶이 것이다. 꽃 가는 얼마나 이는 그들의 눈이 두기 것이다. 곧 온갖 같지 곳이 소담스러운 있으며, 칼이다. 얼마나 낙원을 이상 같이, 것이다. 방황하였으며, 지혜는 맺어, 바로 끝까지 있는가? 이상 싶이 목숨이 열락의 일월과 사막이다.
+    </div>
+
+    <hr class="clearfloat">
+
+    <h3>배경 이미지 테스트</h3>
+    <div id="bg-img"></div>
+</body>
+</html>
